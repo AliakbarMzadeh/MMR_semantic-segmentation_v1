@@ -1,0 +1,72 @@
+#!/bin/bash
+# Modified training script for SAR-RARP50 dataset
+
+model="smp_UNet++"
+epochs=20  # Reduced for initial testing
+workers=2
+train_batch_size=8   # Reduced for Colab memory constraints
+val_batch_size=4     # Reduced for Colab memory constraints
+full_res_validation="False"
+lr=1e-3
+optimizer="Adam"
+wd=0.00001
+lr_steps=2
+step_gamma=0.1
+dice_loss_factor=0.5  # Using both dice and CE loss
+resized_height=256
+resized_width=256
+cropSize=-1
+dataset="sarrarp50"
+
+# Updated paths for Colab environment
+data_dir="/content/MMR_Seg_Unet/MMR_Core_ModelData/SurgicalDataClass/datasets/${dataset}"
+json_path="/content/MMR_Seg_Unet/MMR_Core_ModelData/SurgicalDataClass/classes/${dataset}SegClasses.json"
+
+display_samples="False"
+save_samples="True"
+save_dir="/content/MMR_Seg_Unet/results/${model}/${dataset}/bs_train${train_batch_size}_val${val_batch_size}/lr${lr}_wd${wd}_dice${dice_loss_factor}/e${epochs}"
+seg_save_dir="${save_dir}/seg_results"
+
+# Create save directories
+mkdir -p $save_dir
+mkdir -p $seg_save_dir
+
+echo "Starting training with the following parameters:"
+echo "Model: $model"
+echo "Dataset: $dataset"
+echo "Epochs: $epochs"
+echo "Train Batch Size: $train_batch_size"
+echo "Val Batch Size: $val_batch_size"
+echo "Learning Rate: $lr"
+echo "Data Directory: $data_dir"
+echo "JSON Path: $json_path"
+echo "Save Directory: $save_dir"
+echo ""
+
+# Change to src directory
+cd /content/MMR_Seg_Unet/MMR_Core_ModelData
+
+python ModelTraining.py \
+    --model $model \
+    --workers $workers \
+    --trainBatchSize $train_batch_size \
+    --valBatchSize $val_batch_size \
+    --full_res_validation $full_res_validation \
+    --resizedHeight $resized_height \
+    --resizedWidth $resized_width \
+    --cropSize $cropSize \
+    --lr $lr \
+    --dice_loss_factor $dice_loss_factor \
+    --epochs $epochs \
+    --lr_steps $lr_steps \
+    --step_gamma $step_gamma \
+    --optimizer $optimizer \
+    --wd $wd \
+    --dataset $dataset \
+    --display_samples $display_samples \
+    --save_samples $save_samples \
+    --data_dir $data_dir \
+    --json_path $json_path \
+    --save_dir $save_dir \
+    --seg_save_dir $seg_save_dir \
+    |& tee -a "${save_dir}/debug.log"

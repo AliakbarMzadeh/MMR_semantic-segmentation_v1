@@ -1,0 +1,64 @@
+{
+  "classes": [
+    {
+      "id": "0",
+      "name": "Background",
+      "color": "[0, 0, 0]",
+      "super-category": "misc"
+    },
+    {
+      "id": "1",
+      "name": "Tool clasper",
+      "color": "[255, 0, 0]",
+      "super-category": "instrument"
+    },
+    {
+      "id": "2",
+      "name": "Tool wrist",
+      "color": "[0, 255, 0]",
+      "super-category": "instrument"
+    },
+    {
+      "id": "3",
+      "name": "Tool shaft",
+      "color": "[0, 0, 255]",
+      "super-category": "instrument"
+    },
+    {
+      "id": "4",
+      "name": "Suturing needle",
+      "color": "[255, 255, 0]",
+      "super-category": "tool"
+    },
+    {
+      "id": "5",
+      "name": "Thread",
+      "color": "[255, 0, 255]",
+      "super-category": "tool"
+    },
+    {
+      "id": "6",
+      "name": "Suction tool",
+      "color": "[0, 255, 255]",
+      "super-category": "instrument"
+    },
+    {
+      "id": "7",
+      "name": "Needle Holder",
+      "color": "[128, 128, 0]",
+      "super-category": "instrument"
+    },
+    {
+      "id": "8",
+      "name": "Clamps",
+      "color": "[128, 0, 128]",
+      "super-category": "instrument"
+    },
+    {
+      "id": "9",
+      "name": "Catheter",
+      "color": "[0, 128, 128]",
+      "super-category": "instrument"
+    }
+  ]
+}
