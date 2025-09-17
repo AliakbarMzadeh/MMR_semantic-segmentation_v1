@@ -1,0 +1,35 @@
+[project]
+name = "MMR_Segmentation"
+version = "0.1.0"
+description = "MMR Surgical tool segmentation."
+authors = [{ name = "Vangelis Kostoulas", email = "vageliskos93@gmail.com" }]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+    "torch<2.7",
+    "nnunetv2",
+    "monai",
+    "torchinfo",
+    "zarr==3.1.1",
+    "opencv-python",
+    "segmentation-models-pytorch",
+    "jupyter",
+    "matplotlib",
+    "ipywidgets",
+    "ipympl",
+    "notebook",
+    "tornado"
+]
+
+[project.scripts]
+mmr_create_dataset = "MMR_Segmentation.Data_Loader:main"
+mmr_train_model = "MMR_Segmentation.MMR_Model_Training:main"
+mmr_infer = "MMR_Segmentation.model_inference:main"
+
+[build-system]
+requires = ["setuptools>=68.2.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["MMR_Segmentation"]

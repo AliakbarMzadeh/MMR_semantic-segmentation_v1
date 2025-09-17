@@ -1,0 +1,13 @@
+torch<2.7
+nnunetv2
+monai
+torchinfo
+zarr==3.1.1
+opencv-python
+segmentation-models-pytorch
+jupyter
+matplotlib
+ipywidgets
+ipympl
+notebook
+tornado

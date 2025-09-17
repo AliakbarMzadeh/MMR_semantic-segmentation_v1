@@ -1,0 +1,4 @@
+[console_scripts]
+mmr_create_dataset = MMR_Segmentation.Data_Loader:main
+mmr_infer = MMR_Segmentation.model_inference:main
+mmr_train_model = MMR_Segmentation.MMR_Model_Training:main
