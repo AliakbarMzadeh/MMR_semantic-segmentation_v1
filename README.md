@@ -54,7 +54,7 @@ From my own work on **ViT robustness (2022–2023)** and tests here (public **pr
 - I had some credits on a **NVIDIA A100 40GB** server, but the model is ~**15M parameters**.  
 - Even with fast optimizers like **Adam**, I trained for **~60–70 epochs**.  
 - **Checkpoints** and **train.log** are on **Google Drive**.
-**Link**: https://drive.google.com/file/d/1OCVpfnYouCpc3qmnV2HrsNlJ6XGESMRW/view?usp=sharing
+**Link**: https://drive.google.com/drive/folders/1bDOo2dRJjJh_hnIEzVVxlHpjlI7ufy2a?usp=sharing
 
 ---
 
