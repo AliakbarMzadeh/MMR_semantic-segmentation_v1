@@ -70,12 +70,16 @@ Each method folder (`MMR_Seg_Unet/` and `MMR_EN/DE_CODER/`) includes:
 
 ### Qualitative PNGs
 <p align="center">
-  <img src="assets/overview_pipeline.png" alt="Pipeline overview" width="900">
+  <img src="assets/Loss_F1_IOU copy.png" alt="Pipeline overview" width="900">
 </p>
 
 <p align="center">
-  <img src="assets/unetpp_samples.png" alt="U-Net++ qualitative predictions" width="440">
-  <img src="assets/encdec_samples.png"  alt="Pretrained EN/DE qualitative predictions" width="440">
+  <img src="assets/U-net++_Results copy.png" alt="U-Net++ qualitative predictions" width="440">
+  <img src="assets/epoch_48 copy.png"  alt="Pretrained EN/DE qualitative predictions" width="440">
+</p>
+
+<p align="center">
+  <img src="assets/download copy.png" alt="Pipeline overview" width="900">
 </p>
 
 ### What to notice
