@@ -79,7 +79,7 @@ Each method folder (`MMR_Seg_Unet/` and `MMR_EN/DE_CODER/`) includes:
 </p>
 
 <p align="center">
-  <img src="assets/download copy.png" alt="Pipeline overview" width="100">
+  <img src="assets/download copy.png" alt="Pipeline overview" width="400">
 </p>
 
 ### What to notice
