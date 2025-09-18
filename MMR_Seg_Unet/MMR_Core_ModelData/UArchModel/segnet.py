@@ -21,8 +21,7 @@ Key Differences from Original SegNet:
 Original SegNet Paper: "SegNet: A Deep Convolutional Encoder-Decoder Architecture 
 for Image Segmentation" by Badrinarayanan et al. (2017)
 
-Implementation adopted from:
-https://github.com/salmanmaq/segmentationNetworks/blob/master/model/segnet.py
+
 
 Author: Medical Robotics Research Team  
 Compatible with: Multi-class semantic segmentation tasks
