@@ -19,11 +19,7 @@ Key Features:
 - Efficient feature reuse through skip connections
 - Suitable for medical image segmentation and dense prediction tasks
 
-Original Paper: "U-Net: Convolutional Networks for Biomedical Image Segmentation"
-by Ronneberger et al. (2015)
 
-Implementation adapted from:
-https://github.com/milesial/Pytorch-UNet/blob/master/unet/unet_model.py
 
 Author: Medical Robotics Research Team
 Compatible with: PyTorch-based semantic segmentation pipelines
